@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Overwatch 2 Roulette </title>
+    <meta charset="ISO-8859-2">
+    <meta name="Description" content="Character and task randomizer for Overwatch 2">
+    <meta name="Keywords" content="Overwatch 2, OW2, Roulette">
+    <meta name="Author" content="Samuel">
+    <meta name="Generator" content="JTHTML 8.6">
+    <meta name="Robots" content="index"
+  </head>
+  <body>
+    <html>
+<body background="file:///C:/Users/Samuel/Documents/OW2%20Roulette/Background/OW2RBackground.png"</body>
+<center><img src="file:///C:/Users/Samuel/Documents/OW2%20Roulette/Logo/OW2R.png" style="border: 0" alt=""></p></center>
+<font face="Burbank Big Condensed" size="5" color="white"</font>
+<p align="middle"</p>
+ 
+<button onclick="randomizeHero();randomizeTask1();randomizeTask2();randomizeTask3()">Spin the Rulette</button>
+- 
+<button onclick="randomizeHero()">Swap your Character</button>
+<button onclick="randomizeTask1()">Swap extra Task 1</button>
+<button color="yellow" onclick="randomizeTask2()">Swap extra Task 2</button>
+<button onclick="randomizeTask3()">Swap extra Task 3</button>
+<br>
+<br>
+*You can adjust the rulette conditions if they can't be met.*
+
+<br>
+<br>
+  
+  
+  <font size="6"<p id="randomCharacter"></p></font> 
+<br>
+  <p align="middle" id="TaskOne"></p>
+  <p align="middle" id="TaskTwo"></p>
+  <p align="middle" id="TaskThree"></p>
+<br>
+<u>Roulette creator: </u><a href="https://www.youtube.com/channel/UCH1JErUqdJ4dDUIXcQSfyrQ" target="_blank">Samuel</a>
+<br>
+<u>My E-mail: Kuba29012006@gmail.com</u>
+<br>
+<u>Roulette inspiration: </u><a href="https://www.youtube.com/channel/UC9ZIwNvVKRgpnbweva_UcvQ" target="_blank">TheKotti</a>
+<br>
+<u>Additional conditions: <a href="https://www.youtube.com/channel/UC0swMoZlOfB3G73_LI4WRLw" target="_blank">MrDisaster</a>  
+
+
+
+<script>
+
+const Hero = 
+["Choose D.Va and play by the following rules:",
+ "Choose Doomfist and play by the following rules:",
+ "Choose Junker Queen and play by the following rules:",
+ "Choose Orisa and play by the following rules:",
+ "Choose Reinhardt and play by the following rules:",
+ "Choose Roadhog and play by the following rules:",
+ "Choose Sigma and play by the following rules:",
+ "Choose Winston and play by the following rules:",
+ "Choose Wrecking Ball and play by the following rules:",
+ "Choose Zarya and play by the following rules:",
+ "Choose Ashe and play by the following rules:",
+ "Choose Bastion and play by the following rules:",
+ "Choose <s>McCree</s> Cassidy and play by the following rules:",
+ "Choose Echo and play by the following rules:",
+ "Choose Genji and play by the following rules:",
+ "Choose Hanzo and play by the following rules:",
+ "Choose Junkrat and play by the following rules:",
+ "Choose Mei and play by the following rules:",
+ "Choose Pharah and play by the following rules:",
+ "Choose Reaper and play by the following rules:",
+ "Choose Sojourn and play by the following rules:",
+ "Choose Soldier: 76 and play by the following rules:",
+ "Choose Sombra and play by the following rules:",
+ "Choose Symmetra and play by the following rules:",
+ "Choose Torbjörn and play by the following rules:",
+ "Choose Tracer and play by the following rules:",
+ "Choose Widowmaker and play by the following rules:",
+ "Choose Ana and play by the following rules:",
+ "Choose Baptiste and play by the following rules:",
+ "Choose Brigitte and play by the following rules:",
+ "Choose Kiriko and play by the following rules:",
+ "Choose Lucio and play by the following rules:",
+ "Choose Mercy and play by the following rules:",
+ "Choose Moira and play by the following rules:",
+ "Choose Any Tank and play by the following rules:",
+ "Choose Any DPS and play by the following rules:",
+ "Choose Any Healer and play by the following rules:",
+ "Choose Zenyatta and play by the following rules:"];
+
+randomizeHero()
+
+function randomizeHero() {
+    document.getElementById("randomCharacter").innerHTML = Hero[Math.floor(Math.random() * Hero.length)]
+}
+</script>
+
+
+<script>
+const Task1 = 
+["Your Ultimate is disabled.",
+ "Your first Ability (Shift) is disabled.",
+ "Only melee is allowed",
+ "If the weapon has a scope, don't use it.",
+ "End the game with at least 2,500 points in damage.",
+ "You must taunt your enemy with an emote after every kill.",
+ "End the game with at least 1,500 points in damage."];
+
+randomizeTask1()
+
+function randomizeTask1() {
+    document.getElementById("TaskOne").innerHTML = Task1[Math.floor(Math.random() * Task1.length)]
+}
+</script>
+
+<script>
+const Task2 = 
+["End the game with 2,000 points in healing.",
+ "End the game with 2,000 points in block.",
+ "Small meds are disabled.",
+ "Meds are disabled.",
+ "You must be crouched the whole game.",
+ "You must B-Hop while moving.",
+ "Big meds are disabled."];
+
+randomizeTask2()
+
+function randomizeTask2() {
+    document.getElementById("TaskTwo").innerHTML = Task2[Math.floor(Math.random() * Task2.length)]
+}
+</script>
+
+<script>
+const Task3 = 
+["You have only 10 lifes for this rulette.",
+ "Your second ability (E) is disabled.",
+ "Get at least 15 eliminations.",
+ "Only assists and other indirect kills are allowed.",
+ "Reversed movement controls.",
+ "If available, use the secondary weapon only",
+ "You have the ability to swap your character once."];
+
+randomizeTask3()
+
+function randomizeTask3() {
+    document.getElementById("TaskThree").innerHTML = Task3[Math.floor(Math.random() * Task3.length)]
+}
+</script>
+
+  </body>
+</html>
